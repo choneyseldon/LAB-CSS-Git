@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@200&family=Poppins:ital,wght@0,500;0,700;0,800;1,300;1,500;1,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #43CBFF 8%, #9708CC 100%);
+}
+
+.product-card {
+    height: 600px;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 25px;
+    padding: 20px 30px 30px 30px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    z-index: 3;
+    overflow: hidden;
+}
+
+.product-card .logo-cart {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-card .logo-cart img {
+    height: 40px;
+    width: 60px;
+    object-fit: cover;
+}
+
+.product-card .logo-cart i {
+    font-size: 27px;
+    color: #707070;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.product-card .logo-cart i:hover {
+    color: #333;
+}
+
+.product-card .main-images {
+    position: relative;
+    height: 210px;
+}
+
+.product-card .main-images img {
+    margin-top: 40px;
+    position: absolute;
+    height: 300px;
+    width: 330px;
+    object-fit: cover;
+    transform: rotate(-18deg);
+    left: 12px;
+    top: -25px;
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.product-card .main-images img.active {
+    opacity: 1;
+}
+
+.product-card .details {
+    margin-top: 60px;
+}
+
+.product-card .details .shoe_name {
+    font-size: 24px;
+    font-weight: 500;
+    color: #161616;
+}
+
+.product-card .details p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+    text-align: justify;
+}
+
+.product-card .details .stars i {
+    margin: 0 -1px;
+    color: #333;
+}
+
+.product-card .color-price .color {
+    display: flex;
+    align-items: center;
+}
+
+.color-price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.color-price .color .color_name {
+    font-size: 18px;
+    font-weight: 500;
+    color-scheme: #333;
+    margin-right: 8px;
+}
+
+.color .circles {
+    display: flex;
+}
+
+.color .circles .circle {
+    height: 20px;
+    width: 20px;
+    background: rgb(240, 240, 186);
+    border-radius: 60%;
+    margin: 0 4px;
+    cursor: pointer;
+}
+
+.color .circles .circle.white.active {
+    box-shadow: 0 0 0 2px #eae4e4, 0 0 0 4px #000000;
+}
+
+.color .circles .circle.blue {
+    background-color: #0071c7;
+}
+
+.color .circles .circle.blue.active {
+    box-shadow: 0 0 0 2px #eae4e4, 0 0 0 4px #0071c7;
+}
+
+.color .circles .circle.black {
+    background-color: #000508;
+}
+
+.color .circles .circle.black.active {
+    box-shadow: 0 0 0 2px #eae4e4, 0 0 0 4px #000000;
+}
+
+.color-price .price {
+    display: flex;
+    flex-direction: column;
+}
+
+.color-price .price .price_num {
+    font-size: 25px;
+    font-weight: 600;
+    color: #707070;
+}
+
+.product-card .button {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    background: #9708CC;
+    border-radius: 25px;
+    margin-top: 30px;
+}
+
+.product-card .button button {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+    cursor: pointer;
+}

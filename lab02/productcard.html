@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Namecard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="product-card">
+        <div class="logo-cart">
+            <img src="img/logo.png" alt="logo">
+            <i class='bx bx-shopping-bag'></i>
+        </div>
+        <div class="main-images">
+            <img id="white" class="white active" src="img/white.png" alt="white">
+            <img id="blue" class="blue" src="img/blue.png" alt="white">
+            <img id="black" class="black" src="img/black.png" alt="white">
+        </div>
+        <div class="details">
+            <span class="shoe_name">ADIDDAS REVENERGY</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit labore magnam architecto quod, recusandae hic corrupti dicta voluptas officia quidem repellat, rem, eum vel ducimus incidunt nam eius vero officiis.</p>
+            <div class="stars">
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star'></i>
+                <i class='bx bxs-star-half'></i>
+            </div>
+        </div>
+        <div class="color-price">
+            <div class="color">
+                <span class="color_name">Colors:</span>
+                <div class="circles">
+                    <span class="circle white active" id="white"></span>
+                    <span class="circle blue " id="blue"></span>
+                    <span class="circle black" id="black"></span>
+                </div>
+            </div>
+            <div class="price">
+                <span class="price_num">$56.99</span>
+            </div>
+        </div>
+        <div class="button">
+
+            <button>Add to Cart</button>
+        </div>
+
+    </div>
+
+
+    <script>
+        let circle = document.querySelector('.color');
+
+        circle.addEventListener('click', (e) => {
+            let target = e.target;
+            if (target.classList.contains('circle')) {
+                circle.querySelector('.active').classList.remove('active');
+                target.classList.add('active');
+                document.querySelector('.main-images .active').classList.remove('active');
+                document.querySelector(`.main-images .${target.id}`).classList.add('active');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
