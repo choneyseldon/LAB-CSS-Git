@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Kalnia', serif;
+    box-sizing: border-box;
+}
+
+body.first {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f5;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .forms {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    transition: margin-left 0.18s ease;
+}
+
+.container .form .title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+}
+
+.form .input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus,
+ :valid) {
+    border-bottom-color: #4070f4;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field i.icon {
+    left: 0;
+}
+
+.input-field i.hidePWD {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input {
+    margin: 0 8px -2px 4px;
+}
+
+.form .text {
+    color: #333;
+    font: 14px;
+}
+
+.form a.text {
+    text-decoration: none;
+    color: #4070f4;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button {
+    margin-top: 35px;
+}
+
+.form .button input {
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #265df2;
+}
+
+.login-signup {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+body.second {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4070f5;
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin: 0 20px;
+}
+
+.container .form2 {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+
+.container .form {
+    width: 50%;
+    padding: 30px;
+    background-color: white;
+    transition: margin-left 0.18s ease;
+}
+
+.container .form .title2 {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.form .title2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #4070f4;
+}
+
+.form2 .input-field2 {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field2 input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-field2 input:is(:focus,
+ :valid) {
+    border-bottom-color: #4070f4;
+}
+
+.input-field2 i {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+}
+
+.input-field2 i.icon {
+    left: 0;
+}
+
+.input-field2 i.hidePWD {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.form .checkbox-text2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.checkbox-text2 .checkbox-content2 {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content2 input {
+    margin: 0 8px -2px 4px;
+}
+
+.form .text2 {
+    color: #333;
+    font: 14px;
+}
+
+.form a.text2 {
+    text-decoration: none;
+    color: #4070f4;
+}
+
+.form a:hover {
+    text-decoration: underline;
+}
+
+.form .button2 {
+    margin-top: 35px;
+}
+
+.form .button2 input {
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #4070f3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button2 input:hover {
+    background-color: #265df2;
+}
+
+.login-signup2 {
+    margin-top: 30px;
+    align-items: center;
+    justify-content: center;
+}
